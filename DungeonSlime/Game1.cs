@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using MonoGameLibrary;
@@ -55,7 +56,7 @@ public class Game1 : Core
             ) * 0.5f,           
             null,               // sourceRectangle
             Color.White,        // color
-            0.0f,               // rotation
+            MathF.PI/2,         // rotation
             Vector2.Zero,       // origin
             1.0f,               // scale
             SpriteEffects.None, // effects
