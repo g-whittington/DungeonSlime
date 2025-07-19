@@ -47,7 +47,20 @@ public class Game1 : Core
 
         SpriteBatch.Begin();
 
-        SpriteBatch.Draw(_logo, Vector2.Zero, Color.White);
+        SpriteBatch.Draw(
+            _logo,              // texture
+            new Vector2(        // position
+                Window.ClientBounds.Width - _logo.Width,
+                Window.ClientBounds.Height - _logo.Height
+            ) * 0.5f,           
+            null,               // sourceRectangle
+            Color.White,        // color
+            0.0f,               // rotation
+            Vector2.Zero,       // origin
+            1.0f,               // scale
+            SpriteEffects.None, // effects
+            0.0f                // layerDepth
+        );
 
         SpriteBatch.End();
 
